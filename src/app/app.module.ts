@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {SiteAComponent} from "./site-a/site-a.component";
+import {SiteBComponent} from "./site-b/site-b.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SiteAComponent,
+    SiteBComponent
   ],
   imports: [
     BrowserModule,
