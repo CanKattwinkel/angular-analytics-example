@@ -8,6 +8,7 @@ import {SiteAComponent} from "./site-a/site-a.component";
 import {SiteBComponent} from "./site-b/site-b.component";
 import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app.routes";
+import {GoogleAnalyticsEventsService} from "./google-analytics-events.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import {appRoutes} from "./app.routes";
     HttpModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [
+    GoogleAnalyticsEventsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
