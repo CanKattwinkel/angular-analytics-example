@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {SiteAComponent} from "./site-a/site-a.component";
 import {SiteBComponent} from "./site-b/site-b.component";
+import {RouterModule} from "@angular/router";
+import {appRoutes} from "./app.routes";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import {SiteBComponent} from "./site-b/site-b.component";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
